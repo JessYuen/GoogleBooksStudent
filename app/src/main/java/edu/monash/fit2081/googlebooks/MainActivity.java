@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                                                           JSONObject volumeInfo = aBook.getJSONObject("volumeInfo");
                                                           String author = volumeInfo.getJSONArray("authors").getString(0);
                                                           String title = volumeInfo.getString("title");
-                                                          String publishedDate = volumeInfo.getString("publishedDate");
+                                                          String publishedDate = volumeInfo.getString("publishedDate").substring(0,4);
                                                           googleBook = new GoogleBook(title, author, publishedDate);
                                                           dataItems.add(googleBook);
                                                       } catch (Exception e) {
