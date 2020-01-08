@@ -55,10 +55,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        public View itemView;
         public TextView tvTitle, tvAuthor, tvYear;
 
         public ViewHolder(View itemView) {
             super(itemView);
+            this.itemView = itemView;
             this.tvTitle = itemView.findViewById(R.id.item_title);
             this.tvAuthor = itemView.findViewById(R.id.item_author);
             this.tvYear = itemView.findViewById(R.id.item_year);
