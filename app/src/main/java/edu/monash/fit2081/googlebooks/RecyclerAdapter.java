@@ -18,6 +18,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     private final ArrayList<GoogleBook> bookList;
 
     public RecyclerAdapter(ArrayList<GoogleBook> bookList) {
+        super();
         this.bookList = bookList;
     }
 
